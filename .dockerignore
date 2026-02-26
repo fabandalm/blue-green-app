@@ -1,0 +1,18 @@
+# Build artifacts
+build/
+.gradle/
+app/build/
+app/.gradle/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
