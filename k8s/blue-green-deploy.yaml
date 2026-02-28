@@ -62,7 +62,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: blue-green-app:1.0.0
+          image: blue-green-app:1.0.1
           ports:
             - containerPort: 8080
           env:
