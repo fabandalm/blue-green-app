@@ -24,22 +24,22 @@ class AppTest {
     void testVersionEndpoint() throws Exception {
         mockMvc.perform(get("/version"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("1.0.0"));
+                .andExpect(content().string("1.0.1"));
     }
     
     @Test
     void testColorEndpoint() throws Exception {
         mockMvc.perform(get("/color"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("blue"));
+                .andExpect(content().string("green"));
     }
     
     @Test
     void testRootEndpoint() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.version").value("1.0.0"))
-                .andExpect(jsonPath("$.color").value("blue"));
+                .andExpect(jsonPath("$.version").value("1.0.1"))
+                .andExpect(jsonPath("$.color").value("green"));
     }
 
     @Test

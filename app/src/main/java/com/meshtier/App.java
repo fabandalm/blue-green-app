@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class App {
     
-    private static final String VERSION = "1.0.0";
-    private static final String COLOR = "blue";
+    private static final String VERSION = "1.0.1";
+    private static final String COLOR = "green";
     
     @GetMapping("/version")
     public String getVersion() {
